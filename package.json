@@ -1,26 +1,25 @@
 {
-  "name": "genghis",
-  "private": true,
+  "name": "orpc-cw",
+  "module": "index.ts",
   "type": "module",
+  "private": true,
   "scripts": {
-    "dev": "next dev",
-    "deploy": "vercel",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "frog": "latest",
-    "hono": "^4",
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.0"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "types": "wrangler types"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "vercel": "^32.4.1"
+    "@types/bun": "latest",
+    "wrangler": "^4.158.0"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "@ardrive/turbo-sdk": "^2.2.0",
+    "@orpc/client": "^2.0.0-beta.49",
+    "@orpc/server": "^2.0.0-beta.49",
+    "arweave": "^2.1.0",
+    "zod": "^4.6.7"
   }
 }

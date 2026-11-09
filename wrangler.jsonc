@@ -1,0 +1,8 @@
+{
+  "compatibility_date": "2026-11-09",
+  "name": "orpc-cw",
+  "main": "src/index.ts",
+  "alias": {
+    "x402-fetch": "./src/stubs/x402-fetch.ts",
+  },
+}
