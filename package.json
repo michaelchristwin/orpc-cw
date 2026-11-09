@@ -6,10 +6,13 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "types": "wrangler types"
+    "types": "wrangler types",
+    "gen:opensea": "openapi-typescript https://api.opensea.io/api/v2/openapi.json -o src/opensea.d.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",
+    "openapi-typescript": "^7.13.0",
+    "typescript": "5",
     "wrangler": "^4.158.0"
   },
   "peerDependencies": {
@@ -20,6 +23,7 @@
     "@orpc/client": "^2.0.0-beta.49",
     "@orpc/server": "^2.0.0-beta.49",
     "arweave": "^2.1.0",
+    "openapi-fetch": "^0.17.0",
     "zod": "^4.6.7"
   }
 }

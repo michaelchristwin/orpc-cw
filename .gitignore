@@ -16,7 +16,6 @@
 # production
 /build
 .wrangler/
-
 # misc
 .DS_Store
 *.pem
@@ -28,6 +27,7 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.dev.vars
 
 # vercel
 .vercel
